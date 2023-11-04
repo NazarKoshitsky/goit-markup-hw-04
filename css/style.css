@@ -129,7 +129,8 @@ h2 {
   height: 4px;
   border-radius: 2px;
   background-color: #404bbf;
-  bottom: -3px;
+  bottom: -1px;
+  color: #404bbf;
 }
 
 .nav-list > li > a:hover {
@@ -151,6 +152,10 @@ h2 {
   color: #404bbf;
 }
 
+.contact-info {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .link-contacts:not(:last-child) {
   margin-right: 40px;
 }
@@ -160,16 +165,16 @@ h2 {
   align-items: center;
 }
 
-.nav-list {
-  display: flex;
-}
-
 .nav-list-item:not(:last-child) {
   margin-right: 40px;
 }
 
 .top-page {
   padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .contacts {
@@ -190,8 +195,8 @@ header .container {
 
 .top-page {
   padding: 24px 15px;
-  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: var(--WHITE, #ffffff);
+  border-bottom: 1px solid #e7e9fc;
+  background: #ffffff;
 }
 
 /* ===============/Main header======== */
@@ -243,7 +248,9 @@ header .container {
 .order-button:focus {
   background-color: #404bbf;
 }
-
+.order-button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* ===============/Hero section======== */
 
 /* ============BENEFITS =========== */
@@ -273,6 +280,8 @@ header .container {
 }
 
 .benefits-icon {
+  width: 64px;
+  height: 64px;
 }
 
 .section-card-title {
@@ -336,7 +345,7 @@ header .container {
 .social-icons {
   display: flex;
   margin-top: 8px;
-  column-gap: 24px;
+  gap: 24px;
   justify-content: center;
 }
 .social-list-item {
@@ -349,9 +358,11 @@ header .container {
   justify-content: center;
   align-items: center;
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-links:hover {
+.social-links:hover,
+.social-links:focus {
   background-color: #404bbf;
 }
 
@@ -378,6 +389,12 @@ header .container {
 
 .portfolio-items {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-items:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .cards-portfolio {
@@ -408,7 +425,7 @@ header .container {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 40px 32px 164px 32px;
+  padding: 40px 32px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
@@ -439,11 +456,11 @@ header .container {
   margin-left: 156px;
   column-gap: 120px;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-cont {
-  margin: 0;
+  margin-right: 120px;
 }
 .social-links-footer {
   margin: 0;
@@ -472,18 +489,21 @@ header .container {
 }
 
 .title-social-media {
+  font-weight: 500;
   font-family: Roboto;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .social-list-footer {
-  column-gap: 16px;
+  gap: 16px;
 }
 
-.footer-social-item:hover {
+.footer-social-item:hover,
+.footer-social-item:focus {
   background-color: #31d0aa;
 }
 /* ============/FOOTER=========== */
