@@ -457,7 +457,6 @@ header .container {
 .footer-container {
   display: flex;
   width: 1440px;
-  margin-left: 156px;
   column-gap: 120px;
   justify-content: center;
   align-items: baseline;
