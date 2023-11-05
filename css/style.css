@@ -131,10 +131,6 @@ h2 {
   bottom: -1px;
 }
 
-.nav-list > li > a:hover {
-  color: #404bbf;
-}
-
 .nav-list-item > a:focus,
 .nav-list-item > a:hover {
   color: #404bbf;
