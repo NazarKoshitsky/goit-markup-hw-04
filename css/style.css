@@ -115,7 +115,9 @@ h2 {
   font-weight: 500;
   color: #2e2f42;
 }
-
+.current-page {
+  color: #404bbf;
+}
 .current-page::after,
 .current-page::after {
   content: '';
