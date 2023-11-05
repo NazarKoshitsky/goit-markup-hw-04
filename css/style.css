@@ -459,11 +459,12 @@ header .container {
   width: 1440px;
   justify-content: center;
   align-items: baseline;
-  margin-right: 120px;
 }
 
 .footer-cont {
+  margin-right: 120px;
 }
+
 .social-links-footer {
   margin: 0;
 }
