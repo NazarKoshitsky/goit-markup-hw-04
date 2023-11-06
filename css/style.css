@@ -444,14 +444,12 @@ header .container {
 
 .main-foot {
   padding-top: 100px;
-  height: 312px;
+  padding-bottom: 100px;
   background-color: #2e2f42;
 }
 
 .footer-container {
   display: flex;
-  width: 1440px;
-  justify-content: center;
   align-items: baseline;
 }
 
@@ -497,6 +495,12 @@ header .container {
 
 .social-list-footer {
   gap: 16px;
+}
+
+.social-icons-item-footer {
+  width: 24px;
+  height: 24px;
+  fill: #f4f4fd;
 }
 
 .footer-social-item:hover,
